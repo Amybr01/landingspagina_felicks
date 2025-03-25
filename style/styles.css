@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/nunito/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/nunito/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fffef7;
+  font-family: 'Nunito', sans-serif;
+  color: #183A36;
+  line-height: 1.4;
+}
+
+/*----------------------------------------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffef7;
+  border-bottom: 2px solid #183A36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 18px;
+  z-index: 999;
+}
+
+.logo {
+  height: 2rem;
+}
+.nav-links {
+  display: none;
+  gap: 1.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  
+}
+.hamburger {
+  height: 22px;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 64px;
+}
+  
+.video-bg {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-46%); /* verplaatst video naar rechts */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.hero-line-1,
+.hero-line-2 {
+  position: absolute;
+  
+  font-family: sirenia, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  z-index: 2;
+  text-align: left;
+  left: 3rem;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.hero-line-1 {
+  top: 4rem;
+}
+.hero-line-2 {
+  top: 6.5rem;
+}
+
+/*----------------------------------------------------------------*/
+
+
+.how-section {
+  padding: 2rem 1rem;
+  background-color: #fffef7;
+  text-align: center;
+  margin: 22px 36px;
+  
+}
+
+.title {
+  font-size: 24px;
+  font-family: sirenia, sans-serif;
+font-weight: 600;
+font-style: normal;
+  margin-bottom: 36px;
+}
+
+.how-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.how-grid-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.how-grid-item.reverse img {
+  order: 2; /
+}
+.how-grid-item.reverse p {
+  order: 1; 
+  text-align: left;
+}
+
+.how-grid img {
+  width: 130px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 1rem;
+  
+}
+
+.how-grid p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  
+  align-self: center;
+  text-align: left;
+}
+
+.how-description {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 56px;
+  
+  
+}
+/*----------------------------------------------------------------*/
+
+.section {
+  
+  text-align: center;
+}
+
+.bg-green {
+  background-color: #97B8A5;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.section-text {
+  text-align: left;
+  max-width: 350px;
+  margin: 22px auto;
+  
+  
+}
+
+.section-image {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 1rem;
+  margin: 2rem auto 0;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.curve {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+
+
+
+/*----------------------------------------------------------------*/
+
+.tips-section {
+  padding: 4rem 2rem;
+  
+  text-align: center;
+}
+
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tip-card {
+  background-color: rgba(255, 216, 125, 0.25);
+  border-radius: 15px;
+  width: 170px;
+  height: 125px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+  scale: 1.05;
+}
+
+
+.tip-card img {
+  height: 40px;
+  padding-top: 25px;
+  
+}
+
+.tip-card p {
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+
+/*----------------------------------------------------------------*/
+.donation-section {
+  background-color: #97B8A5;
+  text-align: center;
+  
+}
+
+
+.donation-image {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 1rem;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+.donation-counter {
+  background-color: #fffef7;
+  border: 2px solid #183A36;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  width: fit-content;
+  margin: 0 auto 24px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  gap: 22px;
+}
+
+.donation-icon img {
+  height: 24px;
+}
+
+.donation-numbers {
+  display: flex;
+  gap: 1rem;
+  font-family: 'Sirenia', serif;
+  font-size: 1.5rem;
+  color: #183A36;
+  font-weight: bold;
+}
+
+.donation-subtitle {
+  font-family: sirenia, sans-serif;
+font-weight: 600;
+font-style: normal;
+  margin: 1rem 0;
+  font-size: 18px;
+}
+
+
+
+.donation-button {
+  display: inline-block;
+  background-color: #FFD87D;
+  padding: 14px 48px;
+  border-radius: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #183A36;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  margin: 14px 0px;
+}
+
+.donation-button:hover {
+  transform: translateY(4px);
+  scale: 1.05;
+  background-color: rgba(255, 216, 125, 0.8);
+}
+
+.donation-section .curve-top svg {
+  transform: scaleX(-1);
+}
+
+.donation-section .curve-bottom svg {
+  transform: scaleX(-1);
+}
+
+
+/*----------------------------------------------------------------*/
+
+
+.download-title {
+  font-size: 24px;
+  font-family: sirenia, sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.download-title .italic {
+  font-style: italic;
+}
+
+.download-text {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.download-buttons img {
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.download-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.mockup-container img {
+  max-width: 300px;
+  width: 100%;
+}
+
+
+/*----------------------------------------------------------------*/
+.footer {
+  background: #183A36;
+  color: #fffef7;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact {
+  text-align: right;
+}
