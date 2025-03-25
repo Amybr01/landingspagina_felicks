@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felicks - Adoptieplatform</title>
+  <title>Felicks</title>
+  <link rel="icon" type="image/png" href="/images/Buttons.png">
+
   <link rel="stylesheet" href="https://use.typekit.net/yox8cse.css">
   <link rel="stylesheet" href="/style/styles.css" />
 </head>
 <body>
   <header class="navbar">
     <img class="logo" src="/images/felicksLogo.png" alt="Felicks Logo" />
-    <nav class="nav-links" id="nav-links">
-      <a href="#How">Hoe</a>
-      <a href="#ForWho">Voor wie</a>
+    <nav class="nav-links hidden" id="nav-links">
+      <a href="#How">Hoe?</a>
+      <a href="#ForWho">Voor wie?</a>
       <a href="#Tips">Tips</a>
       <a href="#Donations">Donaties</a>
       <a href="#Download">Download</a>
@@ -167,35 +169,38 @@
 
 
   <footer class="footer">
-    <div class="footer-links">
-      <a href="#How">Hoe?</a>
+    <div class="footer-column links">
+      <a href="#How">Wat?</a>
       <a href="#ForWho">Voor wie?</a>
       <a href="#Tips">Tips</a>
       <a href="#Donations">Donaties</a>
-      <a href="#Download">Download</a>
+      <a href="#Download">Downloads</a>
     </div>
-    <div class="footer-contact">
-      <p>Contact us: felicks@hotmail.com</p>
+  
+    <div class="footer-column contact">
+      <p><strong>Contact:</strong></p>
+      <p>felicks@hotmail.com</p>
+  
+      <p><strong>Volg ons:</strong></p>
+      <div class="social-icons">
+        <img src="/icons/facebook.svg" alt="Facebook" />
+        <img src="/icons/instagram.svg" alt="Instagram" />
+        <img src="/icons/tiktok.svg" alt="TikTok" />
+      </div>
     </div>
   </footer>
 
   <script>
-  
-  document.querySelectorAll('.hamburger').forEach(el => {
-    el.addEventListener('click', () => {
-      const menuList = document.querySelector('#nav-links');
-      const classes = [
-        "absolute", "top-12", "w-full", "left-0", "flex-col",
-        "items-center", "bg-baby-powder", "border-y-2",
-        "border-dark-slate-green", "py-4"
-      ];
-      menuList?.classList.toggle('hidden');
-      menuList?.classList.toggle('flex');
-      classes.forEach(className => {
-        menuList?.classList.toggle(className);
-      });
-    });
-  });
+    const hamburger = document.querySelector('.hamburger');
+const menuList = document.querySelector('#nav-links');
+
+hamburger.addEventListener('click', () => {
+  menuList.classList.toggle('hidden');
+  menuList.classList.toggle('flex');
+  menuList.classList.toggle('mobile-menu');
+});
+
   </script>
+  
 </body>
 </html>
