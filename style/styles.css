@@ -23,8 +23,9 @@
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  background-color: #fffef7;
-  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  background-color: #FFFDF9;
+  
   color: #183A36;
   line-height: 1.4;
 }
@@ -35,7 +36,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fffef7;
+  background-color: #FFFDF9;
   border-bottom: 2px solid #183A36;
   display: flex;
   justify-content: space-between;
@@ -70,7 +71,7 @@ body {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: #fffef7;
+  background-color: #FFFDF9;
   padding: 1rem 0;
   border-top: 2px solid #183A36;
   border-bottom: 2px solid #183A36;
@@ -103,7 +104,7 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     margin-top: 64px;
 }
@@ -132,18 +133,35 @@ body {
   line-height: 1.2;
 }
 .hero-line-1 {
-  top: 4rem;
+  top: 3.5rem;
 }
 .hero-line-2 {
-  top: 6.5rem;
+  top: 6rem;
 }
+
+.curve-video {
+  position: absolute;
+  bottom: -0.1%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 0;
+  z-index: 1;
+}
+
+.curve-video svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 
 /*----------------------------------------------------------------*/
 
 
 .how-section {
   padding: 2rem 1rem;
-  background-color: #fffef7;
+  
   text-align: center;
   margin: 22px 36px;
   
@@ -179,7 +197,7 @@ font-style: normal;
 }
 
 .how-grid img {
-  width: 130px;
+  width: 150px;
   height: 115px;
   object-fit: cover;
   border-radius: 1rem;
@@ -189,7 +207,7 @@ font-style: normal;
 .how-grid p {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   
   align-self: center;
   text-align: left;
@@ -272,7 +290,7 @@ font-style: normal;
   border-radius: 15px;
   width: 170px;
   height: 125px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.2s ease;
   text-decoration: none;
@@ -435,6 +453,7 @@ font-style: normal;
   font-family: 'Nunito', sans-serif;
   flex-wrap: wrap;
   gap: 2rem;
+  
 }
 
 .footer-column {
@@ -445,7 +464,7 @@ font-style: normal;
 
 .footer-column a {
   text-decoration: none;
-  color: #fffef7;
+  color: #FFFDF9;
   font-weight: 500;
 }
 
@@ -468,3 +487,546 @@ font-style: normal;
   height: 20px;
 }
 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+@media (min-width: 600px){
+  .navbar{
+    padding: 22px 42px;
+  }
+  
+  .nav-links {
+    display: flex !important;
+    gap: 36px;
+    
+  }
+
+  .logo {
+    height: 36px;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: #183A36;
+    font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  }
+
+  .nav-links a:hover{
+    scale: 1.1;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /*----------------------------------------------------------------*/
+
+ .title{
+  font-size: 36px;
+  margin-bottom: 56px;
+ }
+.video-container{
+  height: 60vh;
+}
+
+ .video-bg {
+  transform: translateX(-50%);
+}
+
+
+ .hero-line-1,
+.hero-line-2 {
+  text-align: right;
+  right: 5.5rem;
+  font-size: 42px;
+}
+.hero-line-1 {
+  top: 56px;
+}
+.hero-line-2 {
+  top: 6.5rem;
+}
+
+  /*----------------------------------------------------------------*/
+
+  .how-section {
+    padding: 36px 32px;
+  }
+
+  .how-grid img {
+    width: 360px;
+    height: 250px;
+  }
+
+  .how-grid {
+    gap: 48px;
+    margin-top: 32px;
+    
+  }
+
+  .how-grid-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .how-grid p {
+    font-size: 22px;
+  }
+
+  /*----------------------------------------------------------------*/
+
+  
+  .bg-green {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 132px 24px;
+    text-align: left;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .text-content {
+    flex: 1;
+    max-width: 350px;
+    margin-top: -16px;
+  }
+
+  .section-image {
+    width: 60%;
+    max-width: 350px;
+    margin: 0 2rem;
+  }
+
+  .curve-top,
+  .curve-bottom {
+    width: 100%;
+  }
+
+  .curve-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .curve-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+    /*----------------------------------------------------------------*/
+    .tips-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .tips-section .section-text {
+      max-width: 700px;
+      margin: -32px auto 3rem;
+      
+      text-align: center;
+      
+    }
+ 
+    .tips-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      justify-items: center;
+      margin-bottom: 32px;
+    }
+  
+
+  .tip-card{
+    width: 190px;
+  height: 150px;
+  }
+
+  .tip-card img {
+    height: 50px;
+    width: auto;
+    padding-top: 36px;
+    
+  }
+
+  .tips-list .tip-card:nth-child(4) {
+    grid-column: 2;
+    margin-left: -250px;
+  }
+
+  .tip-card:nth-child(5) {
+    grid-column: 3;
+    margin-left: -250px;
+  }
+
+
+  /*----------------------------------------------------------------*/
+
+  .donation-section {
+    padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+
+  overflow: visible;
+  }
+
+  .donation-section .title {
+    float: right;
+    margin-right: 310px;
+    text-align: left;
+    margin-top: 22px;
+    margin-bottom: 32px;
+    
+  }
+
+  .donation-image {
+    float: left;
+    margin-left: 124px;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 1rem;
+
+    margin-top: 24px;
+  }
+
+  .donationsweb{
+    margin-top: 24px;
+  }
+  
+  .donation-counter,
+  .donation-subtitle,
+  .donation-section .section-text {
+    margin-left: 564px;
+    
+    text-align: left;
+    max-width: 400px;
+    margin-top: 22px;
+    
+  }
+
+
+  .donation-button {
+    margin-top: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+  }
+
+  .donation-section .curve-top svg,
+  .donation-section .curve-bottom svg {
+    transform: scaleX(-1) !important;
+  }
+
+  
+
+    /*----------------------------------------------------------------*/
+  
+    .section#Download {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      
+      
+      flex-wrap: wrap;
+      margin: 48px;
+    }
+
+    .download-title {
+      font-size: 36px;
+  margin-bottom: 56px;
+    }
+  
+    .section#Download .text-content {
+      flex: 1;
+      
+      text-align: left;
+
+      max-width: 55%;
+    }
+  
+    .section#Download .section-text {
+      
+      max-width: 100%;
+      min-width: 50%;
+    }
+  
+    .section#Download .download-buttons {
+      justify-content: flex-start;
+      
+    }
+  
+    .section#Download .section-image {
+      flex: 1;
+      min-width: 45%;
+      width: 100%;
+      align-self: flex-end;
+    }
+
+    /*----------------------------------------------------------------*/
+
+    .footer {
+      padding: 24px 56px;
+    }
+
+  
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+  .navbar{
+    padding: 22px 48px;
+  }
+  
+  .nav-links {
+   
+    gap: 64px;
+    
+  }
+
+  .logo {
+    height: 42px;
+  }
+
+  .nav-links a{
+    text-decoration: none;
+    color: #183A36;
+    font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  }
+
+  /*----------------------------------------------------------------*/
+  .title{
+    font-size: 42px;
+    margin-bottom: 56px;
+   }
+  
+   .video-container {
+    height: 100vh;
+  }
+
+  .video-bg {
+    top: 0;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 65% center; /* schuift nr links zodat hond niet afgesneden wordt */
+  }
+
+  .hero-line-1,
+  .hero-line-2 {
+    left: auto;
+    right: 6rem;
+    text-align: right;
+    font-size: 64px;
+  }
+
+  .hero-line-1 {
+    top: 3rem;
+  }
+
+  .hero-line-2 {
+    top: 8rem;
+  }
+
+  /*----------------------------------------------------------------*/
+
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-items: center;
+    margin-top: 56px;
+  }
+  
+  .how-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .how-grid img {
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+    
+  }
+
+  .how-grid-item.reverse img {
+    order: 1; /
+  }
+  .how-grid-item.reverse p {
+    order: 2; 
+    text-align: left;
+  }
+  
+  .how-grid p {
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-top: -48px;
+  }
+  
+  .how-description {
+    max-width: 850px;
+    margin: 56px auto 0;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /*----------------------------------------------------------------*/
+
+
+  .section {
+  height: 350px;
+  }
+  .text-content {
+    text-align: center;
+
+    max-width: 35%;
+  }
+  .section-text {
+    
+    max-width: 90%;
+    margin: 36px auto;
+    
+  }
+
+  /*----------------------------------------------------------------*/
+
+  .donation-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+    padding: 120px 64px;
+    background-color: #97B8A5;
+    text-align: left;
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .donation-section .title {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(80px);
+    font-size: 42px;
+    margin: 0;
+  }
+
+  .donation-image {
+    max-width: 30%;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    margin: 40px 0;
+    
+  }
+
+  .donation-content {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 480px;
+    margin-top: 40px;
+    gap: 32px;
+  }
+
+  .donationsweb {
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    top: 56px;
+    left:-10px;
+
+   
+  }
+
+  
+
+  .donation-button {
+    
+    float: left;
+    margin: 0 -30px;
+    
+  }
+
+  .donation-section .section-text {
+    margin: 0 76px;
+    max-width: 480px;
+  }
+
+  /*----------------------------------------------------------------*/
+
+  .section#Download {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 96px 64px;
+    gap: 64px;
+    flex-wrap: wrap; /* allow buttons to wrap below the text */
+    text-align: left;
+  }
+  
+  .section#Download .text-content {
+    flex: 1 1 400px;
+    max-width: 500px;
+  }
+  
+  .section#Download .download-title {
+    font-size: 42px;
+    margin-bottom: 32px;
+  }
+  
+  .section#Download .section-text {
+    margin-bottom: 32px;
+  }
+  
+  .section#Download .download-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    flex: 1 1 100%;
+    max-width: 800px;
+    margin-top: -200px;
+  }
+  
+  .section#Download .section-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+
+  
+}
