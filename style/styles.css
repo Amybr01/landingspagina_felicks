@@ -815,37 +815,37 @@ font-style: normal;
   }
 
   /*----------------------------------------------------------------*/
-  .title{
-    font-size: 42px;
-    margin-bottom: 56px;
-   }
-  
-   .video-container {
+  .video-container {
     height: 100vh;
+    position: relative;
+    overflow: hidden;
   }
-
+  
   .video-bg {
+    position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     height: 90%;
     width: 100%;
     object-fit: cover;
     object-position: 65% center; /* schuift nr links zodat hond niet afgesneden wordt */
   }
-
-  .hero-line-1,
-  .hero-line-2 {
-    left: auto;
-    right: 6rem;
-    text-align: right;
-    font-size: 64px;
+  
+  .curve-video {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 0;
+    z-index: 2;
   }
-
-  .hero-line-1 {
-    top: 3rem;
-  }
-
-  .hero-line-2 {
-    top: 8rem;
+  
+  .curve-video svg {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 
   /*----------------------------------------------------------------*/
